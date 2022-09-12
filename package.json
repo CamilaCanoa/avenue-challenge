@@ -1,0 +1,14 @@
+{
+  "name": "avenue-challenge",
+  "version": "1.0.0",
+  "description": "Projeto de testes para o desafio da Avenue",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Camila Canoa",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^9.7.0"
+  }
+}
