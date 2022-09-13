@@ -11,6 +11,10 @@ describe('scenario 1', ()=>{
         cy.get('[data-asin="B084DWCZY6"] > .sg-col-inner > .s-widget-container > .s-card-container > .a-spacing-base > .s-product-image-container > .rush-component > .a-link-normal > .a-section > .s-image').click()
         cy.get('#add-to-cart-button').click()
 
+        cy.wait(2000)
+
+        cy.get('.a-button-close').click()
+      
         cy.get('.a-padding-medium').should('contain.text', 'Adicionado ao carrinho')
 
     })
